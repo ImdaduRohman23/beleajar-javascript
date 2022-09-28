@@ -48,11 +48,58 @@
 //KESIMPULAN = HANYA VARIABEL DI DALAM FUNGSI YANG MENGHASILKAN LOCAL VARIABLE
 
 // 6. HOISTING
-hoisting = 'hoisting';
-console.log(hoisting);
-var hoisting;
+// hoisting = 'hoisting';
+// console.log(hoisting);
+// var hoisting;
 
-console.log(tambah(2, 2));
-function tambah(a, b) {
-    return a + b;
-}
+// console.log(tambah(2, 2));
+// function tambah(a, b) {
+//     return a + b;
+// }
+
+// 7. VAR LET CONTS
+//-----A. Scop Variable-----
+//VAR => GLOBAL, kecuali saat di function
+
+//LET DAN CONST => ketika didalam suatu block maka akan menjadi local variable, tetepi ketika di luar menjadi global
+// let a = 'global';
+// if(true) {
+//     console.log(a);
+//     let b = 'local';
+// }
+// console.log(b);
+
+//-----B. Hoisting-----//
+//VAR => hoisting, sebagaimana yg telah dijelaskan di atas
+
+//LET DAN CONST => tidak hoisting
+// a = 1;
+// console.log(a);
+// let a;
+
+//-----C. Redleclaration-----//
+//VAR => redeclatation
+// var a = 1;
+// var a = 2;
+// console.log(a)
+
+//LET DAN CONST => tidak redeclaration
+// let a = 1;
+// let a = 2;
+// console.log(a)
+
+//-----Reassignments-----//
+//VAR => reasignment
+// var a = 1;
+// a = 2;
+// console.log(a)
+
+//LET => reassignments
+// let a = 1;
+// a = 4;
+// console.log(a)
+
+//CONST
+const a = 1;
+a = 4;
+console.log(a)
