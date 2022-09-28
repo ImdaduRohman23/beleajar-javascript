@@ -22,27 +22,37 @@
 // console.log(nol);
 
 //5. SCOP VARIABLE
-var global = 'global'; //global variable
+// var global = 'global'; //global variable
 
-if(true) {
-    console.log('if', global);
-    var ifif = 'if'; //global variable => variabel di dalam block if
-}
+// if(true) {
+//     console.log('if', global);
+//     var ifif = 'if'; //global variable => variabel di dalam block if
+// }
 
-for(i = 0; i<1; i++) {
-    console.log('for', global);
-    var forfor = 'for'; //global variable => variabel di dalam block for
+// for(i = 0; i<1; i++) {
+//     console.log('for', global);
+//     var forfor = 'for'; //global variable => variabel di dalam block for
 
-}
+// }
 
-function test() {
-    console.log('function', global);
-    var fungsi = 'function'; //local variable => variabel di dalam fungsi
-}
-test();
+// function test() {
+//     console.log('function', global);
+//     var fungsi = 'function'; //local variable => variabel di dalam fungsi
+// }
+// test();
 
-console.log(ifif)
-console.log(forfor)
-console.log(fungsi)
+// console.log(ifif)
+// console.log(forfor)
+// console.log(fungsi)
 
 //KESIMPULAN = HANYA VARIABEL DI DALAM FUNGSI YANG MENGHASILKAN LOCAL VARIABLE
+
+// 6. HOISTING
+hoisting = 'hoisting';
+console.log(hoisting);
+var hoisting;
+
+console.log(tambah(2, 2));
+function tambah(a, b) {
+    return a + b;
+}
