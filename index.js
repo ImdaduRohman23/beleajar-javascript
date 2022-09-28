@@ -9,8 +9,16 @@
 // console.log(nama)
 
 // 3. DATA TYPE
-var string = 'this is string data'; //string
-var number = 1; //number
-var isTrue = true; //boolean
-var isFalse = false; 
-console.log(string, number, isTrue, isFalse);
+// var string = 'this is string data'; //1. string
+// var number = 1; //2. number
+// var isTrue = true; /3. /boolean
+// var isFalse = false; 
+// console.log(string, number, isTrue, isFalse);
+
+// 4. UNDEFINED VS NULL
+var nama; //4. undifined
+console.log(nama)
+var nol = null; //5. null
+console.log(nol);
+
+
