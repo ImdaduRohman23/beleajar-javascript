@@ -99,7 +99,35 @@
 // a = 4;
 // console.log(a)
 
-//CONST
-const a = 1;
-a = 4;
-console.log(a)
+//CONST => tidak reassignment
+// const a = 1;
+// a = 4;
+// console.log(a)
+
+//8. OPERATOR
+//A. Aritmatina (+, -, /, *, %)
+// console.log(10 % 9);
+
+//B. Penugasan (+=, -=, /=, *=)
+// let a = 1;
+// a += 2;
+// console.log(a);
+
+//C. Perbandingan (==, !=, ===)
+// console.log(3 == 3);
+// console.log(4 != 4);
+// console.log(5 === '5');
+
+//D. Logika (&&, ||, !)
+console.log(true && true)
+console.log(true && false)
+console.log(false && true)
+console.log(false && false)
+
+console.log(true || true)
+console.log(true || false)
+console.log(false || true)
+console.log(false || false)
+
+console.log(!true)
+
