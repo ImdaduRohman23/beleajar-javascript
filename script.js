@@ -20,13 +20,14 @@
 
 // ---------- HIGER ORDER FUNCTION ----------
 // => fungsi yg beroperasi pada fungsi lain, baik digunakan pada argument maupun sbg return value
-const sapa = (nama, waktu) => {
-    console.log(nama);
-    waktu();
-}
+// const sapa = (nama, waktu) => {
+//     console.log(nama);
+//     waktu();
+// }
 
-const waktu = () => {
-    alert('selalamt malam')
-}
+// const waktu = () => {
+//     alert('selalamt malam')
+// }
 
-sapa('imdadu', waktu)
+// sapa('imdadu', waktu)
+
