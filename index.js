@@ -32,16 +32,27 @@
 // }
 
 //-------- 4. switch --------//
-let color = 'yellow';
+// let color = 'yellow';
 
-switch (color) {
-    case 'red':
-        console.log('color is red')
-        break;
-    case 'yellow':
-        console.log('color is yellow')
-        break;
-    default:
-        console.log('color is . . .')
-        break;
+// switch (color) {
+//     case 'red':
+//         console.log('color is red')
+//         break;
+//     case 'yellow':
+//         console.log('color is yellow')
+//         break;
+//     default:
+//         console.log('color is . . .')
+//         break;
+// }
+
+function solution(x, y){
+    // tulis jawabanmu disini
+    if( y > x && x % 5 === 0) {
+            y = y-(x + 0.5);
+            return console.log(x, y);
+    } else {
+        return console.log(x, y);
+    }
 }
+solution(33, 120)
