@@ -11,10 +11,22 @@
 // console.log('end of program')
 // console.log(a)
 
-//-------- 1. if else --------
-let b = 15;
-if(b < 10) {
-    console.log(b, ' kurang dari 10')
+//-------- 2. if else --------//
+// let b = 15; //silakan ganti-ganti nilai b
+// if(b < 10) {
+//     console.log(b, ' kurang dari 10')
+// } else {
+//     console.log(b, ' lebih dari 10')
+// }
+
+//-------- 3. if else if --------//
+const warna = 'merah';
+if(warna == 'biru') {
+    console.log('kamu memilih warna ', warna)
+} else if(warna == 'hijau') {
+    console.log('kamu memilih warna ', warna)
+} else if(warna == 'merah') {
+    console.log('kamu memilih warna', warna)
 } else {
-    console.log(b, ' lebih dari 10')
+    console.log('kamu tidak memilih warna biru, hijau, dan merah')
 }
