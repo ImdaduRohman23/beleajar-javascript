@@ -20,13 +20,28 @@
 // }
 
 //-------- 3. if else if --------//
-const warna = 'merah';
-if(warna == 'biru') {
-    console.log('kamu memilih warna ', warna)
-} else if(warna == 'hijau') {
-    console.log('kamu memilih warna ', warna)
-} else if(warna == 'merah') {
-    console.log('kamu memilih warna', warna)
-} else {
-    console.log('kamu tidak memilih warna biru, hijau, dan merah')
+// const warna = 'merah';
+// if(warna == 'biru') {
+//     console.log('kamu memilih warna ', warna)
+// } else if(warna == 'hijau') {
+//     console.log('kamu memilih warna ', warna)
+// } else if(warna == 'merah') {
+//     console.log('kamu memilih warna', warna)
+// } else {
+//     console.log('kamu tidak memilih warna biru, hijau, dan merah')
+// }
+
+//-------- 4. switch --------//
+let color = 'yellow';
+
+switch (color) {
+    case 'red':
+        console.log('color is red')
+        break;
+    case 'yellow':
+        console.log('color is yellow')
+        break;
+    default:
+        console.log('color is . . .')
+        break;
 }
