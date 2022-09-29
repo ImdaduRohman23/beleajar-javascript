@@ -1,18 +1,10 @@
 // Perhatian! Hapus komen untuk melihat hasil program
 
-//FUNCTION
-function hallo() {
-    console.log('hallo');
-}
-hallo()
+//PENGONDISIAN (alur flow 1)
 
-function add(a, b) {
-    console.log(a + b);
+//-------- 1. if --------
+const a = 10;
+if(a > 5) {
+    console.log('masuk ke if')
 }
-add(1, 2)
-
-function tmbh(a, b) {
-    return a + b;
-}
-const hsl = tmbh(2, 5);
-console.log(hsl)
+console.log('end of program')
