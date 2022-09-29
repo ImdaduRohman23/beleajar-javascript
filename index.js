@@ -3,8 +3,18 @@
 //PENGONDISIAN (alur flow 1)
 
 //-------- 1. if --------
-const a = 10;
-if(a > 5) {
-    console.log('masuk ke if')
+// let a = 10;
+// if(a > 5) {
+//     a += 1;
+//     console.log(a)
+// }
+// console.log('end of program')
+// console.log(a)
+
+//-------- 1. if else --------
+let b = 15;
+if(b < 10) {
+    console.log(b, ' kurang dari 10')
+} else {
+    console.log(b, ' lebih dari 10')
 }
-console.log('end of program')
