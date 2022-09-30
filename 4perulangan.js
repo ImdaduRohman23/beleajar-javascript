@@ -41,3 +41,15 @@
 // let b = ++a;
 // console.log('a', a);
 // console.log('b', b)
+
+
+
+//LATIHAN PERULANGAN
+// function solution(num) {
+//     let res = 0;
+//     for(let i = 1; i <= num; i++) {
+//         res += i;
+//     } console.log(res)
+// }
+
+// solution(10);
