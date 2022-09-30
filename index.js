@@ -1,58 +1,19 @@
 // Perhatian! Hapus komen untuk melihat hasil program
 
-//PENGONDISIAN (alur flow 1)
+//PENGULANGAN (alur flow 2)
 
-//-------- 1. if --------
-// let a = 10;
-// if(a > 5) {
-//     a += 1;
-//     console.log(a)
-// }
-// console.log('end of program')
-// console.log(a)
+// //---------- 1.Increment and Decrement ------------
+// //increment
+// let i = 1;
+// i = 1+1;
+// i++;
+// i++;
+// i++;
+// console.log(i)
 
-//-------- 2. if else --------//
-// let b = 15; //silakan ganti-ganti nilai b
-// if(b < 10) {
-//     console.log(b, ' kurang dari 10')
-// } else {
-//     console.log(b, ' lebih dari 10')
-// }
-
-//-------- 3. if else if --------//
-// const warna = 'merah';
-// if(warna == 'biru') {
-//     console.log('kamu memilih warna ', warna)
-// } else if(warna == 'hijau') {
-//     console.log('kamu memilih warna ', warna)
-// } else if(warna == 'merah') {
-//     console.log('kamu memilih warna', warna)
-// } else {
-//     console.log('kamu tidak memilih warna biru, hijau, dan merah')
-// }
-
-//-------- 4. switch --------//
-// let color = 'yellow';
-
-// switch (color) {
-//     case 'red':
-//         console.log('color is red')
-//         break;
-//     case 'yellow':
-//         console.log('color is yellow')
-//         break;
-//     default:
-//         console.log('color is . . .')
-//         break;
-// }
-
-function solution(x, y){
-    // tulis jawabanmu disini
-    if( y > x && x % 5 === 0) {
-            y = y-(x + 0.5);
-            return console.log(x, y);
-    } else {
-        return console.log(x, y);
-    }
-}
-solution(33, 120)
+// //decrement
+// let j = 10;
+// j = j-1;
+// j--;
+// j--;
+// console.log(j)
