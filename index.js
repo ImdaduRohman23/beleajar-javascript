@@ -83,7 +83,17 @@
 //     }
 // }
 
-//---------- 12.fill ----------// mengecek apakah suatu item ada di dalam array
-let arr = [1, 2, 3, 4, 'oii'];
-let join = arr.join('-');
-console.log(join)
+//---------- 12.join ----------// membuat menjadi sebuah string
+// let arr = [1, 2, 3, 4, 'oii'];
+// let join = arr.join('-');
+// console.log(join)
+
+//---------- 13.fill ----------// 
+let arr = [1, 2, 3, 4, 5];
+console.log('data awal', arr);
+let b = arr.fill(0);
+console.log('data fill', arr); //MENIMPA DATA AWAL
+console.log(b);
+let c = arr.fill('aku', 2, 4); //(value, start, end)
+console.log(c);
+
