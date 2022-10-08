@@ -13,7 +13,7 @@
 
 //---------- 2.push ----------// menambahkan item di akhir array
 // let arr = [1, 2, 3, 4, 5];
-// arr.push(8);
+// arr.push(8); //HARUS BERDIRI SEDIRI, NGGAK BISA DIMASUKIN KE VARIABEL BARU/CLG
 // console.log(arr);
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i])
@@ -22,30 +22,39 @@
 //---------- 3.unshift ----------// menambahkan item di awal array
 // let arr = [1, 2, 3, 4];
 // console.log('arr awal', arr);
-// arr.unshift(10);
+// arr.unshift(10); //HARUS BERDIRI SEDIRI, NGGAK BISA DIMASUKIN KE VARIABEL BARU/CLG
 // console.log('arr unshift', arr);
 
 
 //---------- 4.pop ----------// rmove/hapus item di akhir array
 // let arr = [1, 2, 3, 4];
-// arr.pop();
+// arr.pop(); //HARUS BERDIRI SEDIRI, NGGAK BISA DIMASUKIN KE VARIABEL BARU/CLG
 // console.log(arr);
 
 //---------- 5.shift ----------// rmove/hapus item di awal array
 // let arr = [1, 2, 3, 4];
-// arr.shift();
+// arr.shift(); //HARUS BERDIRI SEDIRI, NGGAK BISA DIMASUKIN KE VARIABEL BARU/CLG
 // console.log(arr);
 
 //---------- 6.reverse ----------// membalik array
 // let arr = [1, 2, 3, 4];
-// let rv = arr.reverse();
-// console.log(rv);
+// let rv = arr.reverse(); //VARIABEL BARU = BEBA
+// console.log('rv', rv);
+// console.log(arr); //nilai awal ikut berubah
 
 //---------- 7.indexOf ----------// mencari index dari sebuah element pada array
 // let arr = [1, 2, 'aku', 'kamu'];
-// console.log(arr.indexOf('aku'));
+// console.log(arr.indexOf('aku')); //VARIABEL BARU = BEBAS
 
 //---------- 8.slice ----------// memotong array
-let arr = [1, 'aku', 'kamu', 4, 5, 7, 8];
-let slice = arr.slice(0, 4); //HARUS BUAT VARIABEL BARU
-console.log(slice);
+// let arr = [1, 'aku', 'kamu', 4, 5, 7, 8];
+// let slice = arr.slice(0, 4); //VARIABEL BARU = BEBAS
+// console.log('slice:', slice);
+// console.log('awal:', arr); //nilai awal tetap
+
+//---------- 9.toString ----------// mengubah array menjadi string
+let arr = [1, 2, 3, 'oii'];
+let arrStr = arr.toString();  //VARIABEL BARU = BEBAS
+console.log(arrStr);
+console.log(arr[0].toString());
+console.log(arr); //nilai awal tidak berubah
