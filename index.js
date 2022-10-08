@@ -89,11 +89,18 @@
 // console.log(join)
 
 //---------- 13.fill ----------// 
-let arr = [1, 2, 3, 4, 5];
-console.log('data awal', arr);
-let b = arr.fill(0);
-console.log('data fill', arr); //MENIMPA DATA AWAL
-console.log(b);
-let c = arr.fill('aku', 2, 4); //(value, start, end)
-console.log(c);
+// let arr = [1, 2, 3, 4, 5];
+// console.log('data awal', arr);
+// let b = arr.fill(0);
+// console.log('data fill', arr); //MENIMPA DATA AWAL
+// console.log(b);
+// let c = arr.fill('aku', 2, 4); //(value, start, end)
+// console.log(c);
+
+//---------- 14.concat ----------// menggabungkan beberapa array
+let arr1 = ['aku', 'kamu'];
+let arr2 = ['kita'];
+let ehe = ['selamanya'];
+let arr3 = arr1.concat(arr2, ehe);
+console.log(arr3);
 
