@@ -19,9 +19,12 @@
 //     console.log(arr[i])
 // }
 
-//---------- 2.Unshift ----------// menambahkan item di awal array
+//---------- 3.Unshift ----------// menambahkan item di awal array
 // let arr = [1, 2, 3, 4];
 // console.log('arr awal', arr)
 // arr.unshift(10);
 // console.log('arr unshift', arr)
 
+
+let ingat = [1, 2, 3];
+console.log(ingat)
