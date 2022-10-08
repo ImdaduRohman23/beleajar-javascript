@@ -66,7 +66,7 @@
 // arr.splice(4, 2);
 // console.log('kurang', arr);
 
-//---------- 10.includes ----------// mengecek apakah suatu item ada di dalam array
+//---------- 11.includes ----------// mengecek apakah suatu item ada di dalam array
 // let arr = [1, 2, 3, 4];
 // console.log(arr.includes(2));
 // console.log(arr.includes(5));
@@ -83,4 +83,7 @@
 //     }
 // }
 
-
+//---------- 12.fill ----------// mengecek apakah suatu item ada di dalam array
+let arr = [1, 2, 3, 4, 'oii'];
+let join = arr.join('-');
+console.log(join)
