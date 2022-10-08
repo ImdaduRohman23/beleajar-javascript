@@ -53,8 +53,16 @@
 // console.log('awal:', arr); //nilai awal tetap
 
 //---------- 9.toString ----------// mengubah array menjadi string
-let arr = [1, 2, 3, 'oii'];
-let arrStr = arr.toString();  //VARIABEL BARU = BEBAS
-console.log(arrStr);
-console.log(arr[0].toString());
-console.log(arr); //nilai awal tidak berubah
+// let arr = [1, 2, 3, 'oii'];
+// let arrStr = arr.toString();  //VARIABEL BARU = BEBAS
+// console.log(arrStr);
+// console.log(arr[0].toString());
+// console.log(arr); //nilai awal tidak berubah
+
+//---------- 10.splice ----------// menambah maupun menghapus element array
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+arr.splice(2, 0, 9); //TAMBAH => index ke-berapa, remove=0, mau ditambahin apa
+console.log('tambah', arr);
+arr.splice(4, 2);
+console.log('kurang', arr);
+
