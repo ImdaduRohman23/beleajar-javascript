@@ -31,9 +31,15 @@
 // arr.pop();
 // console.log(arr)
 
-//---------- 4.pop ----------// rmove/hapus item di akhir array
+//---------- 5.shift ----------// rmove/hapus item di awal array
+// let arr = [1, 2, 3, 4];
+// arr.shift();
+// console.log(arr);
+
+//---------- 6.reverse ----------// membalik array
 let arr = [1, 2, 3, 4];
-arr.shift();
-console.log(arr);
+let rv = arr.reverse();
+console.log(rv);
+
 
 
