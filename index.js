@@ -37,9 +37,11 @@
 // console.log(arr);
 
 //---------- 6.reverse ----------// membalik array
-let arr = [1, 2, 3, 4];
-let rv = arr.reverse();
-console.log(rv);
+// let arr = [1, 2, 3, 4];
+// let rv = arr.reverse();
+// console.log(rv);
 
-
+//---------- 7.indexOf ----------// mencari index dari sebuah element pada array
+let arr = [1, 2, 'aku', 'kamu'];
+console.log(arr.indexOf('aku'))
 
