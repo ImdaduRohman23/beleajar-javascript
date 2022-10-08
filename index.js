@@ -60,9 +60,27 @@
 // console.log(arr); //nilai awal tidak berubah
 
 //---------- 10.splice ----------// menambah maupun menghapus element array
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-arr.splice(2, 0, 9); //TAMBAH => index ke-berapa, remove=0, mau ditambahin apa
-console.log('tambah', arr);
-arr.splice(4, 2);
-console.log('kurang', arr);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// arr.splice(2, 0, 9); //TAMBAH => index ke-berapa, remove=0, mau ditambahin apa
+// console.log('tambah', arr);
+// arr.splice(4, 2);
+// console.log('kurang', arr);
+
+//---------- 10.includes ----------// mengecek apakah suatu item ada di dalam array
+// let arr = [1, 2, 3, 4];
+// console.log(arr.includes(2));
+// console.log(arr.includes(5));
+
+
+//LATIHAN
+// let cari = ['aku kamu', 'cari aku', 'coba'];
+// // console.log(cari.includes('aku kamu'));
+// for(let i = 0; i < cari.length; i++){
+//     if(cari[i].includes('aku')){
+//         console.log('yes')
+//     } else{
+//         console.log('no')
+//     }
+// }
+
 
