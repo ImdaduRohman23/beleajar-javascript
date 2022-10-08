@@ -27,9 +27,13 @@
 
 
 //---------- 4.pop ----------// rmove/hapus item di akhir array
-let arr = [1, 2, 3, 4];
-arr.pop();
-console.log(arr)
+// let arr = [1, 2, 3, 4];
+// arr.pop();
+// console.log(arr)
 
+//---------- 4.pop ----------// rmove/hapus item di akhir array
+let arr = [1, 2, 3, 4];
+arr.shift();
+console.log(arr);
 
 
