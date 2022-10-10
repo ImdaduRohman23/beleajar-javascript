@@ -13,47 +13,82 @@
 //         break;
 // }
 
-// function getLetter(s) {
-//     // Write your code here
-//     switch(s.charAt()) {
-//         case ('a' || 'e' || 'i' || 'o' || 'u'):
-//             return console.log('A')
-//         case ('b' || 'c' || 'd' || 'f' || 'g'):
-//             return 'B'
-//         case ('h' || 'j' || 'k' || 'l' || 'm'):
-//             return 'C'
-//         case ('n' || 'p' || 'q' || 'r' || 's'|| 't' || 'v' || 'w' || 'x' || 'y' || 'z'): 
-//             return 'D'
-//     }
+//Day 2: Conditional Statements: Switch
+function getLetter(s) {
+    // Write your code here
+
+    switch(s.charAt(0)) {
+        case 'a': 
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return 'A'
+            break
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'f':
+        case 'g':
+            return 'B'
+            break
+        case 'h':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':            
+            return 'C'
+            break
+        case 'n':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z': 
+            return 'D'
+            break
+    }
     
-// }
-// getLetter('us')
+}
+getLetter('as')
 
 //DAY 2:CONDITIONAL STATEMENT: SWITCH
-let a = 'aikol';
-let z ='';
-let y ='';
-for(let i = 0; i < a.length; i++){
-    // console.log(a[i])
-    if(a[i] == 'a' ||a[i] == 'i' ||a[i] == 'u' ||a[i] == 'e' ||a[i] == 'o'){
-        // console.log('naise')
-        z += a[i];
-    } else y += a[i];
-}
-let n = z.concat(y);
-for(let i = 0; i < n.length; i++){
-    console.log(n[i])
-}
+// let a = 'aikol';
+// let z ='';
+// let y ='';
+// for(let i = 0; i < a.length; i++){
+//     // console.log(a[i])
+//     if(a[i] == 'a' ||a[i] == 'i' ||a[i] == 'u' ||a[i] == 'e' ||a[i] == 'o'){
+//         // console.log('naise')
+//         z += a[i];
+//     } else y += a[i];
+// }
+// let n = z.concat(y);
+// for(let i = 0; i < n.length; i++){
+//     console.log(n[i])
+// }
 
 
-// console.log(a[0])
-// let b = 2;
-// if(b == 1 || b == 2){
+// let b = 'd';
+// if(b == 'a' || b == 'd'){
 //     console.log('yes')
 // } else console.log('no')
 
-// let z = '';
-// z= 'a';
-// z = z.concat('b')
-// console.log(z)
+// let color = 'b';
 
+// switch (color) {
+//     case 'red':
+//         console.log('color is red')
+//         break;
+//     case 'a', 'b':
+//         console.log('color is yellow')
+//         break;
+//     default:
+//         console.log('color is . . .')
+//         break;
+// }

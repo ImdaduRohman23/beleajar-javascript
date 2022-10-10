@@ -42,3 +42,63 @@
 //     console.log(jmlh)
 // }
 // factorial(4);
+
+//DAY 2:CONDITIONAL STATEMENT: SWITCH
+// let a = 'aikol';
+// let z ='';
+// let y ='';
+// for(let i = 0; i < a.length; i++){
+//     // console.log(a[i])
+//     if(a[i] == 'a' ||a[i] == 'i' ||a[i] == 'u' ||a[i] == 'e' ||a[i] == 'o'){
+//         // console.log('naise')
+//         z += a[i];
+//     } else y += a[i];
+// }
+// let n = z.concat(y);
+// for(let i = 0; i < n.length; i++){
+//     console.log(n[i])
+// }
+
+//Day 2: Conditional Statements: Switch
+function getLetter(s) {
+    // Write your code here
+
+    switch(s.charAt(0)) {
+        case 'a': 
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return 'A'
+            break
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'f':
+        case 'g':
+            return 'B'
+            break
+        case 'h':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':            
+            return 'C'
+            break
+        case 'n':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z': 
+            return 'D'
+            break
+    }
+    
+}
+getLetter('as')
