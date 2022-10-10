@@ -60,45 +60,61 @@
 // }
 
 //Day 2: Conditional Statements: Switch
-function getLetter(s) {
-    // Write your code here
+// function getLetter(s) {
+//     // Write your code here
 
-    switch(s.charAt(0)) {
-        case 'a': 
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
-            return 'A'
-            break
-        case 'b':
-        case 'c':
-        case 'd':
-        case 'f':
-        case 'g':
-            return 'B'
-            break
-        case 'h':
-        case 'j':
-        case 'k':
-        case 'l':
-        case 'm':            
-            return 'C'
-            break
-        case 'n':
-        case 'p':
-        case 'q':
-        case 'r':
-        case 's':
-        case 't':
-        case 'v':
-        case 'w':
-        case 'x':
-        case 'y':
-        case 'z': 
-            return 'D'
-            break
-    }
+//     switch(s.charAt(0)) {
+//         case 'a': 
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//             return 'A'
+//             break
+//         case 'b':
+//         case 'c':
+//         case 'd':
+//         case 'f':
+//         case 'g':
+//             return 'B'
+//             break
+//         case 'h':
+//         case 'j':
+//         case 'k':
+//         case 'l':
+//         case 'm':            
+//             return 'C'
+//             break
+//         case 'n':
+//         case 'p':
+//         case 'q':
+//         case 'r':
+//         case 's':
+//         case 't':
+//         case 'v':
+//         case 'w':
+//         case 'x':
+//         case 'y':
+//         case 'z': 
+//             return 'D'
+//             break
+//     }
     
+// }
+// getLetter('as')
+
+//Day 3: Arrays
+function getSecondLargest(nums) {
+    // Complete the function
+    nums.sort((a, b) => b-a);
+    var largest2 = nums[0];
+
+    for(let i = nums.length; i >= 0 ; i--){
+        if(largest2 == nums[i] ){
+            largest2 = nums[i+1];
+        }
+
+    }
+    return largest2
 }
-getLetter('as')
+console.log(getSecondLargest([1, 4, 5, 2, 5, 6, 6]))

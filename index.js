@@ -14,48 +14,48 @@
 // }
 
 //Day 2: Conditional Statements: Switch
-function getLetter(s) {
-    // Write your code here
+// function getLetter(s) {
+//     // Write your code here
 
-    switch(s.charAt(0)) {
-        case 'a': 
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
-            return 'A'
-            break
-        case 'b':
-        case 'c':
-        case 'd':
-        case 'f':
-        case 'g':
-            return 'B'
-            break
-        case 'h':
-        case 'j':
-        case 'k':
-        case 'l':
-        case 'm':            
-            return 'C'
-            break
-        case 'n':
-        case 'p':
-        case 'q':
-        case 'r':
-        case 's':
-        case 't':
-        case 'v':
-        case 'w':
-        case 'x':
-        case 'y':
-        case 'z': 
-            return 'D'
-            break
-    }
+//     switch(s.charAt(0)) {
+//         case 'a': 
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//             return 'A'
+//             break
+//         case 'b':
+//         case 'c':
+//         case 'd':
+//         case 'f':
+//         case 'g':
+//             return 'B'
+//             break
+//         case 'h':
+//         case 'j':
+//         case 'k':
+//         case 'l':
+//         case 'm':            
+//             return 'C'
+//             break
+//         case 'n':
+//         case 'p':
+//         case 'q':
+//         case 'r':
+//         case 's':
+//         case 't':
+//         case 'v':
+//         case 'w':
+//         case 'x':
+//         case 'y':
+//         case 'z': 
+//             return 'D'
+//             break
+//     }
     
-}
-getLetter('as')
+// }
+// getLetter('as')
 
 //DAY 2:CONDITIONAL STATEMENT: SWITCH
 // let a = 'aikol';
@@ -92,3 +92,40 @@ getLetter('as')
 //         console.log('color is . . .')
 //         break;
 // }
+
+let a = [1, 3, 5, 6, 2, 6, 6, 6, 6, 4];
+// let largest = [];
+// for (let i = 0; i < a.length; i++){
+//     if( a[[i]] > largest){
+//         largest.push(a[i]);
+//     }
+
+// }
+// console.log(largest)
+
+a.sort((a, b) => b-a
+);
+// if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
+// if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
+
+var largest2 = a[0];
+
+for(let i = a.length; i >= 0 ; i--){
+    if(largest2 == a[i] ){
+        largest2 = a[i+1];
+    }
+
+}
+console.log(largest2)
+
+// var arr = [3, 6, 2, 56, 32, 5, 89, 32];
+// arr.sort((a, b) => b - a)
+// var largest = arr[0];
+
+// for (var i = 0; i < arr.length; i++) {
+//     if (largest < arr[i] ) {
+//         largest = arr[i];
+//     }
+// }
+// console.log(largest);
+// console.log(arr);
