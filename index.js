@@ -1,37 +1,59 @@
 // Hapus komen untuk melihat hasil program!
 
-//HIGHT ORDER MRTHOD/FUNCTION
+// const b = [1, 2, 3, 4];
+// b.map((i) => console.log(i < 3));
 
-//---------- 1.sort ---------\\
-// let arr = [3, 2, 4, 7 ,3, 1, 5, 8, 6, 10];
-// let a = arr.sort();
-// console.log('a', a);
-// console.log('arr', arr); //overwrite the original array
+// let s = 'abs';
+// switch (s.charAt(0)) {
+//     case('b'||'a'):
+//         return('bisa ges')
+//         break;
 
-// let buah = ['Mangga', 'Kurma', 'Kiwi', 'Nanas', 'Apel'];
-// buah.sort();
-// console.log('buah', buah);
+//     default: console.log('hehe')
+//         break;
+// }
 
-// let arr2 = [2, 4, 1, 10, 20, 5, 8, 3, 40, 7, 15];
-// arr2.sort((a, b) => a - b);
-// console.log('arr2', arr2);
+// function getLetter(s) {
+//     // Write your code here
+//     switch(s.charAt()) {
+//         case ('a' || 'e' || 'i' || 'o' || 'u'):
+//             return console.log('A')
+//         case ('b' || 'c' || 'd' || 'f' || 'g'):
+//             return 'B'
+//         case ('h' || 'j' || 'k' || 'l' || 'm'):
+//             return 'C'
+//         case ('n' || 'p' || 'q' || 'r' || 's'|| 't' || 'v' || 'w' || 'x' || 'y' || 'z'): 
+//             return 'D'
+//     }
+    
+// }
+// getLetter('us')
 
-//---------- 2.find ---------\\
-// let arr = [3, 2, 4, 7 ,3, 1, 5, 8, 6, 10];
-// console.log('ada   |', arr.find(item => item == 3));
-// console.log('tidak ada   |', arr.find(item => item == 11));
+//DAY 2:CONDITIONAL STATEMENT: SWITCH
+let a = 'aikol';
+let z ='';
+let y ='';
+for(let i = 0; i < a.length; i++){
+    // console.log(a[i])
+    if(a[i] == 'a' ||a[i] == 'i' ||a[i] == 'u' ||a[i] == 'e' ||a[i] == 'o'){
+        // console.log('naise')
+        z += a[i];
+    } else y += a[i];
+}
+let n = z.concat(y);
+for(let i = 0; i < n.length; i++){
+    console.log(n[i])
+}
 
-//---------- 3.map ---------\\
-// let arr = [3, 2, 4, 7 ,3, 1, 5, 8, 6, 10];
-// console.log(arr.map(item => item+1));
-// console.log(arr); //does not change the original array
 
-//---------- 4.filter ---------\\
-// let arr = [2, 4, 1, 10, 20, 5, 8, 3, 40, 7, 15];
-// console.log(arr.filter(item => item < 10));
-// console.log(arr); //does not change the orginal array
+// console.log(a[0])
+// let b = 2;
+// if(b == 1 || b == 2){
+//     console.log('yes')
+// } else console.log('no')
 
-//---------- 5. sort + filter + map ---------\\
-let arr = [2, 4, 1, 10, 20, 5, 8, 3, 40, 7, 15];
-//case: dapatkan data yang kurang dari semadengan 10, urutkan dari yang paling kecil, lalu dijadikan 2x dari nilai awal!
-console.log(arr.filter(i=>i<=10).sort((a, b) => a-b).map(i=>i*2));
+// let z = '';
+// z= 'a';
+// z = z.concat('b')
+// console.log(z)
+

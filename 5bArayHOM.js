@@ -32,6 +32,6 @@
 // console.log(arr); //does not change the orginal array
 
 //---------- 5. sort + filter + map ---------\\
-let arr = [2, 4, 1, 10, 20, 5, 8, 3, 40, 7, 15];
-//case: dapatkan data yang kurang dari semadengan 10, urutkan dari yang paling kecil, lalu dijadikan 2x dari nilai awal!
-console.log(arr.filter(i=>i<=10).sort((a, b) => a-b).map(i=>i*2));
+// let arr = [2, 4, 1, 10, 20, 5, 8, 3, 40, 7, 15];
+// //case: dapatkan data yang kurang dari semadengan 10, urutkan dari yang paling kecil, lalu dijadikan 2x dari nilai awal!
+// console.log(arr.filter(i=>i<=10).sort((a, b) => a-b).map(i=>i*2));
