@@ -120,12 +120,19 @@
 // console.log(getSecondLargest([1, 4, 5, 2, 5, 6, 6]))
 
 //Day 3: Try, Catch, and Finally
-function reverseString(s) {
-    try{
-        s = s.split('').reverse().join('')
-    } catch(e) {
-        console.log(e.message)
-    } finally {
-        console.log(s)
-    }
+// function reverseString(s) {
+//     try{
+//         s = s.split('').reverse().join('')
+//     } catch(e) {
+//         console.log(e.message)
+//     } finally {
+//         console.log(s)
+//     }
+// }
+
+//Day 3: Throw
+function isPositive(a) {
+    if (a == 0) throw Error('Zero Error');
+    if (a < 0) throw Error('Negative Error');
+    if (a > 0) throw Error('YES');
 }
