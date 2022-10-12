@@ -104,17 +104,28 @@
 // getLetter('as')
 
 //Day 3: Arrays
-function getSecondLargest(nums) {
-    // Complete the function
-    nums.sort((a, b) => b-a);
-    var largest2 = nums[0];
+// function getSecondLargest(nums) {
+//     // Complete the function
+//     nums.sort((a, b) => b-a);
+//     var largest2 = nums[0];
 
-    for(let i = nums.length; i >= 0 ; i--){
-        if(largest2 == nums[i] ){
-            largest2 = nums[i+1];
-        }
+//     for(let i = nums.length; i >= 0 ; i--){
+//         if(largest2 == nums[i] ){
+//             largest2 = nums[i+1];
+//         }
 
+//     }
+//     return largest2
+// }
+// console.log(getSecondLargest([1, 4, 5, 2, 5, 6, 6]))
+
+//Day 3: Try, Catch, and Finally
+function reverseString(s) {
+    try{
+        s = s.split('').reverse().join('')
+    } catch(e) {
+        console.log(e.message)
+    } finally {
+        console.log(s)
     }
-    return largest2
 }
-console.log(getSecondLargest([1, 4, 5, 2, 5, 6, 6]))

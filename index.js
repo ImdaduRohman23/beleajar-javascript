@@ -93,7 +93,8 @@
 //         break;
 // }
 
-let a = [1, 3, 5, 6, 2, 6, 6, 6, 6, 4];
+// let a = [1, 3, 5, 6, 2, 6, 6, 6, 6, 4];
+// console.log(typeof a[2]) 
 // let largest = [];
 // for (let i = 0; i < a.length; i++){
 //     if( a[[i]] > largest){
@@ -103,20 +104,20 @@ let a = [1, 3, 5, 6, 2, 6, 6, 6, 6, 4];
 // }
 // console.log(largest)
 
-a.sort((a, b) => b-a
-);
-// if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
-// if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
+// a.sort((a, b) => b-a
+// );
+// // if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
+// // if(a[0] == a[1] && a[0] == a[2]) {return console.log(a[3]);}
 
-var largest2 = a[0];
+// var largest2 = a[0];
 
-for(let i = a.length; i >= 0 ; i--){
-    if(largest2 == a[i] ){
-        largest2 = a[i+1];
-    }
+// for(let i = a.length; i >= 0 ; i--){
+//     if(largest2 == a[i] ){
+//         largest2 = a[i+1];
+//     }
 
-}
-console.log(largest2)
+// }
+// console.log(largest2)
 
 // var arr = [3, 6, 2, 56, 32, 5, 89, 32];
 // arr.sort((a, b) => b - a)
@@ -129,3 +130,6 @@ console.log(largest2)
 // }
 // console.log(largest);
 // console.log(arr);
+
+let a = '1234';
+console.log(a.split('').reverse())
