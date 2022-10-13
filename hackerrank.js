@@ -138,14 +138,26 @@
 // }
 
 //Day 4: Create a Rectangle Object
-function Rectangle(a, b) {
-    const rec = {
-        length: a,
-        width: b,
-        perimeter: 2*(a+b),
-        area: a*b
-    }
-    return rec
-}
+// function Rectangle(a, b) {
+//     const rec = {
+//         length: a,
+//         width: b,
+//         perimeter: 2*(a+b),
+//         area: a*b
+//     }
+//     return rec
+// }
 
-console.log(Rectangle(4,5));
+// console.log(Rectangle(4,5));
+
+//Day 4: Count Objects
+function getCount(objects) {
+    
+    let c=0;
+    for( let i in objects) {
+        if(objects[i].x === objects[i].y){
+            c++
+        }
+    }
+    return c
+}

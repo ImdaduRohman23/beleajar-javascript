@@ -131,15 +131,21 @@
 // console.log(largest);
 // console.log(arr);
 
-function Rectangle(a, b) {
-    const rec = {
-        length: a,
-        width: b,
-        perimeter: 2*(a+b),
-        area: a*b
+const a = [
+    {
+        nama: 'Imdadu',
+        kelas: 'Ihya'
+    },
+    {
+        nama: 'Rohman',
+        kelas: 'Ihya'
+    },
+    {
+        nama: 'Imdadu',
+        kelas: 'Ihya'
     }
-    return rec
-}
+];
 
-console.log(Rectangle(4,5));
-console.log(rec.length)
+for( let i in a) {
+    console.log(a[i].nama)
+}
