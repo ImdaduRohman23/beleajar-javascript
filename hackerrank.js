@@ -131,8 +131,21 @@
 // }
 
 //Day 3: Throw
-function isPositive(a) {
-    if (a == 0) throw Error('Zero Error');
-    if (a < 0) throw Error('Negative Error');
-    if (a > 0) throw Error('YES');
+// function isPositive(a) {
+//     if (a == 0) throw Error('Zero Error');
+//     if (a < 0) throw Error('Negative Error');
+//     if (a > 0) throw Error('YES');
+// }
+
+//Day 4: Create a Rectangle Object
+function Rectangle(a, b) {
+    const rec = {
+        length: a,
+        width: b,
+        perimeter: 2*(a+b),
+        area: a*b
+    }
+    return rec
 }
+
+console.log(Rectangle(4,5));

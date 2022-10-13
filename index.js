@@ -131,5 +131,15 @@
 // console.log(largest);
 // console.log(arr);
 
-let a = '1234';
-console.log(a.split('').reverse())
+function Rectangle(a, b) {
+    const rec = {
+        length: a,
+        width: b,
+        perimeter: 2*(a+b),
+        area: a*b
+    }
+    return rec
+}
+
+console.log(Rectangle(4,5));
+console.log(rec.length)
