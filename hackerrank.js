@@ -151,13 +151,24 @@
 // console.log(Rectangle(4,5));
 
 //Day 4: Count Objects
-function getCount(objects) {
+// function getCount(objects) {
     
-    let c=0;
-    for( let i in objects) {
-        if(objects[i].x === objects[i].y){
-            c++
-        }
+//     let c=0;
+//     for( let i in objects) {
+//         if(objects[i].x === objects[i].y){
+//             c++
+//         }
+//     }
+//     return c
+// }
+
+//Day 4: Classes
+class Polygon{
+    constructor(sisi) {
+        this.s = sisi;
     }
-    return c
+    
+    perimeter() {
+        return this.s.reduce((a, b) => a+b)
+    }
 }

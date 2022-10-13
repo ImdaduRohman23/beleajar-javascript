@@ -131,21 +131,26 @@
 // console.log(largest);
 // console.log(arr);
 
-const a = [
-    {
-        nama: 'Imdadu',
-        kelas: 'Ihya'
-    },
-    {
-        nama: 'Rohman',
-        kelas: 'Ihya'
-    },
-    {
-        nama: 'Imdadu',
-        kelas: 'Ihya'
-    }
-];
 
-for( let i in a) {
-    console.log(a[i].nama)
-}
+//LOOPING ARRAY OF OBJECT
+// const a = [
+//     {
+//         nama: 'Imdadu',
+//         kelas: 'Ihya'
+//     },
+//     {
+//         nama: 'Rohman',
+//         kelas: 'Ihya'
+//     },
+//     {
+//         nama: 'Imdadu',
+//         kelas: 'Ihya'
+//     }
+// ];
+
+// for( let i in a) {
+//     console.log(a[i].nama)
+// }
+
+let a = [1, 2, 3];
+console.log(a.reduce((a, b) => a*b))
