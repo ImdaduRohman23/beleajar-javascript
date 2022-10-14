@@ -152,13 +152,12 @@
 //     console.log(a[i].nama)
 // }
 
-let a = [[1, 2, 3], [1,2, 3], [1,2, 3]];
+let a = [[2, 2, 3], [1,4, 3], [1,2, 3]];
 let ltr = 0;
 let trl = 0;
 for(let i = 0; i < a.length; i++){
     ltr += a[i][i];
-    trl += a[i][a.length-1]
+    trl += a[i][a.length-i-1]
 }
 // console.log(ltr)
-// console.log('trl', trl)
-console.log(a[0][a.length-1])
+console.log('trl', ltr - trl)

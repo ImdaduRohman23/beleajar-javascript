@@ -32,3 +32,14 @@ function aVeryBigSum(ar) {
     return sum
 }
 
+//Diagonal Difference
+function diagonalDifference(arr) {
+    // Write your code here
+    let ltr = 0;
+    let rtl = 0;
+    for (let i = 0; i< arr.length; i++) {
+        ltr += arr[i][i];
+        rtl += arr[i][arr.length-i-1];
+    }
+    return Math.abs(ltr - rtl)
+}
