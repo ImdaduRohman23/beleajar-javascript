@@ -152,5 +152,13 @@
 //     console.log(a[i].nama)
 // }
 
-let a = [1, 2, 3];
-console.log(a.reduce((a, b) => a*b))
+let a = [[1, 2, 3], [1,2, 3], [1,2, 3]];
+let ltr = 0;
+let trl = 0;
+for(let i = 0; i < a.length; i++){
+    ltr += a[i][i];
+    trl += a[i][a.length-1]
+}
+// console.log(ltr)
+// console.log('trl', trl)
+console.log(a[0][a.length-1])
