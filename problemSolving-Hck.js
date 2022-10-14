@@ -32,7 +32,7 @@ function aVeryBigSum(ar) {
     return sum
 }
 
-//Diagonal Difference
+//---------- Diagonal Difference ----------//
 function diagonalDifference(arr) {
     // Write your code here
     let ltr = 0;
@@ -43,3 +43,28 @@ function diagonalDifference(arr) {
     }
     return Math.abs(ltr - rtl)
 }
+
+//---------- Plus Minus ----------//
+function plusMinus(arr) {
+    // Write your code here
+    let p=0;
+    let n=0;
+    let z=0;
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] > 0) {
+            p += 1;
+        } else if(arr[i] < 0) {
+            n++;
+        } else {
+            z++
+        }
+    }
+    let prob = [p/arr.length, n/arr.length, z/arr.length];
+    for (let i = 0; i < prob.length; i++) {
+        console.log(prob[i].toFixed(6))
+    }
+}
+
+console.log(plusMinus([2, -2, 0, 2, 3]))
+
+//INGAT! : .toFiced => mengatur jumlah decimal + menjadikannya string

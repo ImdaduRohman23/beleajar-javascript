@@ -152,12 +152,29 @@
 //     console.log(a[i].nama)
 // }
 
-let a = [[2, 2, 3], [1,4, 3], [1,2, 3]];
-let ltr = 0;
-let trl = 0;
-for(let i = 0; i < a.length; i++){
-    ltr += a[i][i];
-    trl += a[i][a.length-i-1]
+// let a = 3;
+// let b = 7;
+// let c = a/b;
+// console.log(c.toFixed(3))
+
+function plusMinus(arr) {
+    // Write your code here
+    let p=0;
+    let n=0;
+    let z=0;
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] > 0) {
+            p += 1;
+        } else if(arr[i] < 0) {
+            n++;
+        } else {
+            z++
+        }
+    }
+    let prob = [p/arr.length, n/arr.length, z/arr.length];
+    for (let i = 0; i < prob.length; i++) {
+        console.log(prob[i].toFixed(6))
+    }
 }
-// console.log(ltr)
-console.log('trl', ltr - trl)
+
+console.log(plusMinus([2, -2, 0, 2, 3]))
