@@ -157,24 +157,19 @@
 // let c = a/b;
 // console.log(c.toFixed(3))
 
-function plusMinus(arr) {
+function staircase(n) {
     // Write your code here
-    let p=0;
-    let n=0;
-    let z=0;
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i] > 0) {
-            p += 1;
-        } else if(arr[i] < 0) {
-            n++;
-        } else {
-            z++
+    for(let i = 0; i < n; i++){
+        let res = '';
+        // console.log(res)
+        for(let j = 0; j < n-i-1; j++){
+            res += ' ';
         }
-    }
-    let prob = [p/arr.length, n/arr.length, z/arr.length];
-    for (let i = 0; i < prob.length; i++) {
-        console.log(prob[i].toFixed(6))
+        for(let k = 0; k < i+1; k++) {
+            res += '*';
+        }
+        console.log(res)
+
     }
 }
-
-console.log(plusMinus([2, -2, 0, 2, 3]))
+staircase(3)
