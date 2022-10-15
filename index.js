@@ -158,24 +158,26 @@
 // console.log(c.toFixed(3))
 
 
-
-
-
-function birthdayCakeCandles(candles) {
+function timeConversion(s) {
     // Write your code here
-    // for(let i = 0; i < candles.length; i++){
-        
-    // }
-    
-    candles.sort((a, b) => b - a);
-    let res = 0
-    for( let i = 0; i < candles.length; i++) {
-        if(candles[0] == candles[i]){
-            res++
+    let jam = '';
+    if(s.includes('AM')){
+        if(s.substring(0, 2) == '12'){
+            jam = '00';
+        } else {
+            jam = s.substring(0, 2);
+        }
+    } else {
+        if(s.substring(0, 2) == '12'){
+            jam = s.substring(0, 2);
+        } else {
+            jam = parseInt(s.substring(0, 2))+12
         }
     }
-    console.log(res)
+    console.log(jam + s.substring(2, 8))
 }
 
-birthdayCakeCandles([3, 2, 1, 3, 3, 4, 4, 4, 4])
+timeConversion('07:05:45PM')
 
+// let a = '1';
+// console.log(parseInt(a)+12);

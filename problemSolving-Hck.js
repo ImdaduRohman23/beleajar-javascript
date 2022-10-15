@@ -115,3 +115,25 @@ function birthdayCakeCandles(candles) {
     }
     console.log(res)
 }
+
+//Time Conversion
+function timeConversion(s) {
+    // Write your code here
+    let jam = '';
+    if(s.includes('AM')){
+        if(s.substring(0, 2) == '12'){
+            jam = '00';
+        } else {
+            jam = s.substring(0, 2);
+        }
+    } else {
+        if(s.substring(0, 2) == '12'){
+            jam = s.substring(0, 2);
+        } else {
+            jam = parseInt(s.substring(0, 2))+12
+        }
+    }
+    console.log(jam + s.substring(2, 8))
+}
+
+timeConversion('07:05:45PM')
