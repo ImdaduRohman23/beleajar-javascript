@@ -157,19 +157,28 @@
 // let c = a/b;
 // console.log(c.toFixed(3))
 
-function staircase(n) {
+function miniMaxSum(arr) {
     // Write your code here
-    for(let i = 0; i < n; i++){
-        let res = '';
-        // console.log(res)
-        for(let j = 0; j < n-i-1; j++){
-            res += ' ';
+    // let max = arr[0];
+    let max = 0;
+    let min = (arr.reduce((a, b) => a+b));
+    for(let i = 0; i < arr.length; i++){
+        let jum = (arr.reduce((a, b) => a+b))-arr[i];
+        if( jum > max) {
+            max = jum;
         }
-        for(let k = 0; k < i+1; k++) {
-            res += '*';
+        if( jum < min) {
+            min = jum;
         }
-        console.log(res)
-
     }
+    console.log(min, max)
 }
-staircase(3)
+
+miniMaxSum([1, 2, 3, 4, 5])
+
+// // ---------- 10.splice ----------// menambah maupun menghapus element array
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // arr.splice(2, 0, 9); //TAMBAH => index ke-berapa, remove=0, mau ditambahin apa
+// // console.log('tambah', arr);
+// arr.splice(4, 2);
+// console.log('kurang', arr);

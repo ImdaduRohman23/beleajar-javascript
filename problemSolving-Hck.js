@@ -84,3 +84,21 @@ function staircase(n) {
         console.log(res)
     }
 }
+
+//Mini-Max Sum
+function miniMaxSum(arr) {
+    // Write your code here
+    // let max = arr[0];
+    let max = 0;
+    let min = (arr.reduce((a, b) => a+b));
+    for(let i = 0; i < arr.length; i++){
+        let jum = (arr.reduce((a, b) => a+b))-arr[i];
+        if( jum > max) {
+            max = jum;
+        }
+        if( jum < min) {
+            min = jum;
+        }
+    }
+    console.log(min, max)
+}
