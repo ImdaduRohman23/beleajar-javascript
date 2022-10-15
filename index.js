@@ -157,28 +157,18 @@
 // let c = a/b;
 // console.log(c.toFixed(3))
 
-function miniMaxSum(arr) {
+
+
+
+
+function birthdayCakeCandles(candles) {
     // Write your code here
-    // let max = arr[0];
-    let max = 0;
-    let min = (arr.reduce((a, b) => a+b));
-    for(let i = 0; i < arr.length; i++){
-        let jum = (arr.reduce((a, b) => a+b))-arr[i];
-        if( jum > max) {
-            max = jum;
-        }
-        if( jum < min) {
-            min = jum;
-        }
-    }
-    console.log(min, max)
+    // for(let i = 0; i < candles.length; i++){
+        
+    // }
+    candles.sort((a, b) => b - a);
+    let filter = (candles.filter(i => i ==3 ))
+    console.log(filter.length)
 }
 
-miniMaxSum([1, 2, 3, 4, 5])
-
-// // ---------- 10.splice ----------// menambah maupun menghapus element array
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// // arr.splice(2, 0, 9); //TAMBAH => index ke-berapa, remove=0, mau ditambahin apa
-// // console.log('tambah', arr);
-// arr.splice(4, 2);
-// console.log('kurang', arr);
+birthdayCakeCandles([3, 2, 1, 3])

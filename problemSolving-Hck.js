@@ -102,3 +102,14 @@ function miniMaxSum(arr) {
     }
     console.log(min, max)
 }
+
+//Birthday Cake Candles
+function birthdayCakeCandles(candles) {
+    // Write your code here
+    // for(let i = 0; i < candles.length; i++){
+        
+    // }
+    candles.sort((a, b) => b - a);
+    let filter = (candles.filter(i => i ==3 ))
+    return filter.length
+}
