@@ -166,9 +166,16 @@ function birthdayCakeCandles(candles) {
     // for(let i = 0; i < candles.length; i++){
         
     // }
+    
     candles.sort((a, b) => b - a);
-    let filter = (candles.filter(i => i ==3 ))
-    console.log(filter.length)
+    let res = 0
+    for( let i = 0; i < candles.length; i++) {
+        if(candles[0] == candles[i]){
+            res++
+        }
+    }
+    console.log(res)
 }
 
-birthdayCakeCandles([3, 2, 1, 3])
+birthdayCakeCandles([3, 2, 1, 3, 3, 4, 4, 4, 4])
+

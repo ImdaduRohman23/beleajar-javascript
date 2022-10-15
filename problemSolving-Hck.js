@@ -106,10 +106,12 @@ function miniMaxSum(arr) {
 //Birthday Cake Candles
 function birthdayCakeCandles(candles) {
     // Write your code here
-    // for(let i = 0; i < candles.length; i++){
-        
-    // }
     candles.sort((a, b) => b - a);
-    let filter = (candles.filter(i => i ==3 ))
-    return filter.length
+    let res = 0
+    for( let i = 0; i < candles.length; i++) {
+        if(candles[0] == candles[i]){
+            res++
+        }
+    }
+    console.log(res)
 }
