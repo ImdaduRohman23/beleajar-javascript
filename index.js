@@ -158,26 +158,30 @@
 // console.log(c.toFixed(3))
 
 
-function timeConversion(s) {
-    // Write your code here
-    let jam = '';
-    if(s.includes('AM')){
-        if(s.substring(0, 2) == '12'){
-            jam = '00';
-        } else {
-            jam = s.substring(0, 2);
-        }
-    } else {
-        if(s.substring(0, 2) == '12'){
-            jam = s.substring(0, 2);
-        } else {
-            jam = parseInt(s.substring(0, 2))+12
-        }
-    }
-    console.log(jam + s.substring(2, 8))
-}
-
-timeConversion('07:05:45PM')
 
 // let a = '1';
 // console.log(parseInt(a)+12);
+
+// function gradingStudents(grades) {
+//     // Write your code here
+//     if(grades < 38) console.log(grades);
+//     else {
+//         if(grades[1] >= 3 && grades[1] < 6){
+//             grades[1] = 5;
+//         } else if (grades[1] > 7) {
+//             grades[0] += 1;
+//             grades[1] =0;
+//         }
+//     console.log(grades)
+//     }
+// }
+
+// gradingStudents(38)
+
+
+function gradingStudents(grades) {
+    // Write your code here
+    
+}
+
+console.log(46%5)
