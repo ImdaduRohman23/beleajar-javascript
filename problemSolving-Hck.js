@@ -166,3 +166,26 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     console.log(xA);
     console.log(xB);
 }
+
+//Breaking the Records
+function breakingRecords(scores) {
+    // Write your code here
+    let hight = scores[0];
+    let low = scores[0];
+    let resH = 0;
+    let resL = 0;
+    for(let i = 0; i < scores.length; i++) {
+        if(scores[i] > hight) {
+            resH++
+            hight = scores[i];
+
+        }
+        else if(scores[i] < low) {
+            resL++
+            low = scores[i]
+            
+        }
+    }
+    return [resH, resL]
+    
+}
