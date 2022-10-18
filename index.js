@@ -178,10 +178,3 @@
 
 // gradingStudents(38)
 
-
-function gradingStudents(grades) {
-    // Write your code here
-    
-}
-
-console.log(46%5)

@@ -148,3 +148,21 @@ function gradingStudents(grades) {
     }
     return grades
 }
+
+//Number Line Jumps
+function kangaroo(x1, v1, x2, v2) {
+    // Write your code here
+    let h = x2 - x1;
+    if( v1 > v2 && h%(v1-v2) == 0) {
+        return "YES"
+    } else return "NO"
+}
+
+//Apple and Orange
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    // Write your code here
+    let xA = apples.map(item => item+a).filter(item => item >= s && item <= t).length;
+    let xB = oranges.map(item => item+b).filter(item => item >= s && item <= t).length;
+    console.log(xA);
+    console.log(xB);
+}
