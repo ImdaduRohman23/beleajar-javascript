@@ -177,4 +177,5 @@
 // }
 
 // gradingStudents(38)
-
+let a = [1, 2, 3];
+console.log((a.reduce((a, b) => a+b))-a[1])

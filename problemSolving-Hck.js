@@ -209,3 +209,14 @@ function catAndMouse(x, y, z) {
     if(Math.abs(y-z) < Math.abs(x-z)) return 'Cat B';
     if(Math.abs(y-z) === Math.abs(x-z)) return 'Mouse C';
 }
+
+//Bill Division
+function bonAppetit(bill, k, b) {
+    // Write your code here
+    let res = (Math.abs((((bill.reduce((a,b) => a+b))-bill[k])/2)-b));
+    if(res != 0){
+        return console.log(res);
+    } else {
+        return console.log('Bon Appetit');
+    }
+}
