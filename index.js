@@ -176,6 +176,11 @@
 //     }
 // }
 
-// gradingStudents(38)
-let a = [1, 2, 3];
-console.log(Math.max(...a))
+// let a = 'a'
+// console.log(('a'.charCodeAt())-97)
+let a = [];
+if( 2> 1){
+    a.push(2)
+}
+a.push(3)
+console.log(a)

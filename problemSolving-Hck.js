@@ -229,3 +229,14 @@ function hurdleRace(k, height) {
         return max-k
     } else return (0)
 }
+
+//Designer PDF Viewer
+function designerPdfViewer(h, word) {
+    // Write your code here
+    let l = [];
+    for(let i =0; i < word.length; i++){
+        l.push(h[(word[i].charCodeAt())-97])
+    }
+    let max = Math.max(...l)
+    return l.length*max
+}
