@@ -240,3 +240,15 @@ function designerPdfViewer(h, word) {
     let max = Math.max(...l)
     return l.length*max
 }
+
+//Viral Advertising
+function viralAdvertising(n) {
+    // Write your code here
+    let s1 = [5];
+    let l1 = [2];
+    for (let i = 0; i < n-1; i++) {
+        s1.push(Math.floor(l1[i]*3));
+        l1.push(Math.floor(s1[i+1]/2))   
+    }
+    return l1.reduce((a,b) => a+b)
+}

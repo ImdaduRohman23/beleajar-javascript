@@ -178,9 +178,5 @@
 
 // let a = 'a'
 // console.log(('a'.charCodeAt())-97)
-let a = [];
-if( 2> 1){
-    a.push(2)
-}
-a.push(3)
-console.log(a)
+
+console.log(Math.floor(6/5))
