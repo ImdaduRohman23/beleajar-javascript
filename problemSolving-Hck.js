@@ -252,3 +252,20 @@ function viralAdvertising(n) {
     }
     return l1.reduce((a,b) => a+b)
 }
+
+
+//Angry Professor
+function angryProfessor(k, a) {
+    // Write your code here
+    let masuk = [];
+    for(let i = 0; i < a.length; i++) {
+        if(a[i] <= 0) {
+            masuk.push(a[i])
+        }
+    }
+        
+    if(masuk.length < k) {
+        return 'YES'
+    } else return 'NO'
+
+}

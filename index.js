@@ -179,4 +179,46 @@
 // let a = 'a'
 // console.log(('a'.charCodeAt())-97)
 
-console.log(Math.floor(6/5))
+// let a = [{
+//     nama: 'im',
+//     no: 2
+// }];
+
+// let b = [...a, {
+//     nama: 'dadu',
+// }]
+// console.log(b)
+
+// const a = [
+//     {
+//         no: 1,
+//         nama: 'imdadu'
+//     },
+//     {
+//         no: 2,
+//         nama: 'rohman'
+//     },
+//     {
+//         no: 3,
+//         nama: 'cekkk'
+//     }
+// ]
+
+// a.forEach( item => {
+//     if(item.no === 1) {
+//         item.nama = 'nyong'
+//     }
+// })
+
+// console.log(a)
+
+let a = [5, 2, 1, 3, 4];
+let b;
+for(let i=0; i < a.length; i++){
+    if(a[i] === i+1){
+        b.push(a[i])
+    }
+}
+
+//https://www.hackerrank.com/challenges/angry-professor/problem?isFullScreen=true
+console.log(b)
