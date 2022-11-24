@@ -269,3 +269,17 @@ function angryProfessor(k, a) {
     } else return 'NO'
 
 }
+
+
+//Find Digits
+function findDigits(n) {
+    let c=0 ;
+    let str = n.toString();
+    let arr = str.split('');
+    for (let i = 0; i < arr.length; i++) {
+        if(n % Number(arr[i]) == 0) {
+            c++
+        }
+    }
+    return c
+}
