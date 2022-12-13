@@ -212,13 +212,40 @@
 
 // console.log(a)
 
-let a = [5, 2, 1, 3, 4];
-let b;
-for(let i=0; i < a.length; i++){
-    if(a[i] === i+1){
-        b.push(a[i])
-    }
-}
+// let a = [5, 2, 1, 3, 4];
+// let b;
+// for(let i=0; i < a.length; i++){
+//     if(a[i] === i+1){
+//         b.push(a[i])
+//     }
+// }
 
 //https://www.hackerrank.com/challenges/angry-professor/problem?isFullScreen=true
-console.log(b)
+// const a = 'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ';
+// console.log(a.split('').reverse().join(''))
+
+
+//Sales by Match
+function sockMerchant(n, ar) {
+    // Write your code here
+    let pairs = 0;
+    const socks = {};
+    ar.forEach(sock => {
+        if(!socks[sock]) {
+            socks[sock] = 0;
+        } socks[sock] = socks[sock] + 1;
+
+        if(socks[sock] % 2 === 0) {
+            pairs = pairs + 1;
+        }
+    })
+
+    return console.log(pairs)
+}
+
+// sockMerchant(4, [1, 2, 1, 1, 2, 1, 5])
+
+// const ex = {};
+// ex.nama = 'imdadu';
+// ex[1] = 9;
+// console.log(ex)
